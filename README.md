@@ -6,6 +6,9 @@ https://keirajcoder.github.io/Advanced_Grid_Activity/
 
 Web Development Exercise: CSS Grid Layout Practice
 
+![Replicate Image](https://github.com/KeiraJCoder/Advanced_Grid_Activity/blob/main/Replicate-Image.png?raw=true)
+
+
 Objective:
 Use CSS Grid to replicate a YouTube video screenshot layout. Provided images will serve as elements within the page. Your challenge is to accurately assemble these elements and style additional components using HTML and CSS to match the example screenshot.
 Resources Provided:

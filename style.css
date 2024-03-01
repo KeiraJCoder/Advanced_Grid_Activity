@@ -1,0 +1,95 @@
+/* Global styles */
+* {
+    font-family: Arial, Helvetica, sans-serif; /* Sets a consistent font across all elements */
+    box-sizing: border-box; /* Changes the box model to include padding and border in the element's total width and height */
+    margin: 0; /* Resets the default margin for all elements */
+    padding: 0; /* Resets the default padding for all elements */
+
+}
+
+/* Body styles */
+body {
+    width: 100%; /* Ensures the body takes the full width of the viewport */
+    min-height: 100vh; /* Ensures the body takes at least the full height of the viewport, allowing it to expand based on content */
+    margin: 0; /* Resets any default browser margin */
+    display: flex; /* Establishes a flex container for direct children, allowing for center alignment */
+    justify-content: center; /* Horizontally centers the content (flex items) inside the body */
+    align-items: center; /* Vertically centers the content (flex items) inside the body */
+}
+
+/* Container styles */
+.container {
+    display: grid; /* Establishes a grid container for direct children */
+    width: 100%; /* Ensures the container takes the full width of its parent */
+    max-width: 1200px; /* Limits the container's maximum width to avoid overly wide layouts */
+    min-height: 100vh; /* Ensures the container takes at least the full height of the viewport, allowing it to expand based on content */
+    grid-template-columns: 1fr; /* Creates a single column layout */
+    grid-template-rows: auto 1fr auto; /* Defines the row sizes - automatic for the first and last, and flexible space for the middle */
+    grid-template-areas: 
+        "image"
+        "header"
+        "main"; /* Assigns specific areas within the grid for placing child elements */
+    gap: 20px; /* Adds space between grid items for visual separation */
+}
+
+/* Image styles */
+.image {
+    grid-area: image; /* Assigns the image to the 'image' area in the grid */
+    width: 100%; /* Ensures the image takes the full width of its grid area */
+    height: auto; /* Maintains the image's aspect ratio */
+    object-fit: cover; /* Ensures the image covers the area of the grid cell without distorting its aspect ratio */
+}
+
+/* Header styles */
+header {
+    grid-area: header; /* Places the header in the designated 'header' area of the grid. */
+    display: grid; /* Establishes a grid layout within the header for further organizing its child elements. */
+    grid-template-columns: 100px 1fr 30px; /* Divides the header's grid into three columns with specified widths. */
+    align-items: center; /* Vertically centers the content of the header's grid columns. */
+    gap: 5px; /* Adds horizontal space between items within the grid for visual separation. */
+    padding-left: 3%; /* Adds padding to the left side of the header for internal spacing. */
+}
+
+/* Header content styling */
+.header-content {
+    display: flex; /* Establishes a flex container for direct children */
+    flex-direction: column; /* Stacks the flex items vertically */
+}
+
+/* Author info styling */
+.author-info {
+    display: flex; /* Establishes a flex container for direct children */
+    align-items: center; /* Vertically centers the flex items inside the author-info container */
+}
+
+/* Icon styling */
+.icon {
+    border-radius: 50%; /* Makes the icons circular */
+    width: auto; /* Allows the width to adjust based on the height, maintaining aspect ratio */
+    max-width: 70%; /* Ensures the icon does not overflow its container */
+    height: auto; /* Maintains the icon's aspect ratio */
+    margin:0;
+}
+
+/* Icon2 specific styling */
+.icon2 {
+    margin-right: 10%; /* Adds left margin for visual separation */
+    width: 2vw; /* Dynamically sizes the width based on the viewport width */
+    max-width: 50px; /* Restricts the maximum width to prevent the icon from becoming too large */
+    height: auto; /* Maintains the icon's aspect ratio */
+}
+
+/* Tick icon styling */
+.tick {
+    width: 20px; /* Fixes the tick icon's width */
+    margin-left: 10px; /* Adds left margin for visual separation from adjacent content */
+}
+
+/* Headings styling */
+
+h2, h3 {
+    margin: 0.5em 0; /* Adds vertical margin for spacing around headings */
+    color: rgb(156, 154, 154); /* Sets the text color for headings */
+    font-weight: normal; /* Normal font weight for a more subtle appearance */
+    font-size: calc(1vw + 1vh + 0.5vmin); /* Calculates a responsive font size based on the viewport dimensions */
+}

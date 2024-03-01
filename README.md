@@ -1,5 +1,9 @@
 # Advanced_Grid_Activity
 
+Result
+
+https://keirajcoder.github.io/Advanced_Grid_Activity/
+
 Web Development Exercise: CSS Grid Layout Practice
 
 Objective:
